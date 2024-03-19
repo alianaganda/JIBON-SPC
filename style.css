@@ -180,27 +180,359 @@ img {
 
 /* BANNER */
 .banner {
-  background-color: var(--gray);
+  background-color: #fbfafa;
   /* pt5rem */
   padding-top: 5rem;
 }
 .banner__wrapper {
-  position: absolute;
+  display: flex;
+}
+.banner__left {
+  padding-left: 15rem;
+  padding-top: 25rem;
 }
 .banner__left h1 {
   font-size: 10rem;
   line-height: 1;
-  max-width: 80rem;
+  font-weight: 700;
+  margin-top: 2rem;
 }
-
 .banner__right {
   position: relative;
-  left:140rem;
+  left: 25rem;
+  top: 0;
 }
-.banner__right img{
-    width:50rem;
+.banner__right img {
+  width: 100rem;
+  height: 70rem;
+}
+.banner__left span {
+  color: var(--green);
 }
 
+/* ABOUT ME akin na gawa
+.about {
+  background-color: var(--light);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.about__wrapper {
+  display: grid;
+}
+.about__left {
+  margin-top: -7rem;
+  padding-left: 15rem;
+}
+kapag gustong hindi patusok ang img hehe
+.about__left img {
+  border-radius: 1rem;
+}
+.about__right {
+  padding-top: 2rem;
+  margin-left: 63rem;
+  margin-top: -73rem;
+}
+.about__right h2 {
+  font-size: 9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.about__right p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+.about__right p span {
+  font-weight: 600;
+}
+.about__right ul {
+  font-size: 2rem;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+magpapalit ng color ng header nav
+.about__right ul li a {
+  color: var(--dark);
+  font-weight: 500;
+}
+.about__right ul li a:after {
+  content: " ";
+  width: 0px;
+  height: 2px;
+  background-color: var(--gray);
+  transition: 0.5s ease;
+  display: block;
+}
+kaya nagkaroon ng guhit sa ilalim
+.about__right ul li a:after {
+  width: 100%;
+}
+color change kapag ihhover
+.about__right ul li a:hover {
+  color: var(--green);
+  transition: 0.5s ease-in-out;
+}
+.about__right h5 {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+.about__right h5 span {
+  font-size: 1.9rem;
+  font-weight: normal;
+}
+.about__right h6 {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+} */
+
+/* about ni ma'am */
+.about {
+  background-color: var(--light);
+  padding-bottom: 5rem;
+}
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 50rem 1fr;
+  gap: 5rem;
+}
+.about__left {
+  padding-left: 17rem;
+}
+.about__left img {
+  border-radius: 1rem;
+  transform: translateY(-1.5rem);
+}
+.about__right {
+  padding-top: 4rem;
+}
+.about__right h3 {
+  font-size: 9rem;
+  font-weight: 500;
+}
+.about__right p {
+  max-width: 70rem;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.about__right span {
+  font-weight: 700;
+}
+.about__title {
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.about__title li {
+  display: inline-block;
+}
+.about__title li::after {
+  content: " ";
+  width: 0px;
+  height: 2px;
+  background-color: var(--gray);
+  transition: 300ms;
+  display: block;
+}
+.about__title li:hover::after {
+  width: 100%;
+}
+.about__main-skills {
+  font-weight: 600;
+}
+.about__main-skills li {
+  display: flex;
+}
+.about__main-skills li span {
+  font-weight: 300;
+}
+.about__main-desc {
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+/* DESIGN FOR JAVASCRIPT */
+.about__title li:first-child.open {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+.about__main-skills {
+  display: none;
+}
+.about__main-skills.open {
+  display: block;
+}
+/* SERVICES */
+.services {
+  padding: 5rem 0;
+  background-color: var(--light);
+}
+.services__title {
+  text-align: center;
+}
+.services__title h3 {
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.services__title p {
+  font-size: 2rem;
+  font-weight: 300;
+  /* for space */
+  margin-bottom: 2rem;
+}
+/* paghihiwalay ng cards */
+.services__wrapper {
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+  gap: 3rem;
+  align-content: center;
+  justify-content: center;
+}
+/* porma ng cards */
+.services__card {
+  background-color: var(--gray);
+  padding: 4rem;
+  border-radius: 1rem;
+  /* para mapagitna na yung mismong lahat */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* for icons ang span */
+.services__card span {
+  color: var(--green);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-right: 18.5rem;
+}
+/* for words under icons */
+.services__card h4 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.services__card p {
+  text-align: left;
+  margin-right: 8%;
+  font-weight: 300;
+  max-width: 20rem;
+}
+
+/* CLIENT */
+.client {
+  padding: 5rem 0;
+  height: 195vh;
+  background-color: var(--light);
+}
+.client__title {
+  text-align: center;
+}
+.client__title h3 {
+  font-size: 8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.client__title p {
+  font-size: 2.2rem;
+  font-weight: 300;
+  /* for space */
+  margin-bottom: 2rem;
+}
+.client__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.client__card img {
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+.client__card {
+  background-color: var(--light);
+  /* padding: .2rem; */
+  border-radius: 1rem;
+  border-style: var(--dark);
+  /* para mapagitna na yung mismong lahat */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cecece;
+}
+/* PROJECT */
+.project {
+  padding: 5rem 0;
+  height: 195vh;
+  background-color: var(--light);
+}
+.project__title {
+  text-align: center;
+}
+.project__title h3 {
+  font-size: 8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.project__title p {
+  font-size: 2rem;
+  font-weight: 300;
+  /* for space */
+  margin-bottom: 2rem;
+}
+.project__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.project__card img {
+  border-radius: 3rem;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  /* para mapa-darken */
+  filter: brightness(50%);
+}
+.project__card {
+  /* padding: .2rem; */
+  /* para mapagitna na yung mismong lahat */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project__card span {
+  color: var(--light);
+  position: absolute;
+  margin-bottom: 7rem;
+}
+.project__card h4 {
+  color: var(--light);
+  font-size: 3rem;
+  font-weight: 700;
+  position: absolute;
+  margin-bottom: -13rem;
+  text-align: center;
+}
+.project__card a {
+  color: var(--light);
+  font-weight: 500;
+  border: 2px solid var(--light);
+  position: absolute;
+  margin-bottom: -38.5rem;
+}
+.project__card a:hover {
+  color: var(--green);
+  transition: 0.5s ease-in-out;
+  border: 2px solid var(--green);
+}
+/* HIRE ME */
+.hire{
+  
+}
 /* REPEATABLE PATTERNS */
 :root {
   --green: #7d9a68;
@@ -221,4 +553,9 @@ img {
   background-color: var(--light);
   border: 1px solid var(--dark);
   color: var(--dark);
+}
+.btn.bg--border-light {
+  background-color: transparent;
+  border: 2px solid var(--light);
+  color: var(--light);
 }
