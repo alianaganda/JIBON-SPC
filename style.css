@@ -180,31 +180,28 @@ img {
 
 /* BANNER */
 .banner {
-  background-color: #fbfafa;
-  /* pt5rem */
-  padding-top: 5rem;
+  background: rgb(210,210,210);
+  background: linear-gradient(0deg, rgba(210,210,210,1) 94%, rgba(85,85,85,1) 100%);
 }
 .banner__wrapper {
   display: flex;
 }
 .banner__left {
   padding-left: 15rem;
-  padding-top: 25rem;
+  padding-top: 15rem;
+}
+.banner__left p{
+  margin-bottom:2.5rem;
+  font-size: 2rem;
 }
 .banner__left h1 {
   font-size: 10rem;
   line-height: 1;
-  font-weight: 700;
-  margin-top: 2rem;
-}
-.banner__right {
-  position: relative;
-  left: 25rem;
-  top: 0;
+  font-weight: 800;
+  margin-bottom:10%;
 }
 .banner__right img {
-  width: 100rem;
-  height: 70rem;
+  max-width: fit-content;
 }
 .banner__left span {
   color: var(--green);
@@ -426,14 +423,13 @@ color change kapag ihhover
 /* CLIENT */
 .client {
   padding: 5rem 0;
-  height: 195vh;
   background-color: var(--light);
 }
 .client__title {
   text-align: center;
 }
 .client__title h3 {
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
@@ -467,14 +463,13 @@ color change kapag ihhover
 /* PROJECT */
 .project {
   padding: 5rem 0;
-  height: 195vh;
   background-color: var(--light);
 }
 .project__title {
   text-align: center;
 }
 .project__title h3 {
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
@@ -482,7 +477,7 @@ color change kapag ihhover
   font-size: 2rem;
   font-weight: 300;
   /* for space */
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .project__wrapper {
   display: grid;
@@ -530,9 +525,122 @@ color change kapag ihhover
   border: 2px solid var(--green);
 }
 /* HIRE ME */
-.hire{
+.hire {
+  padding: 27rem;
+  background-color: var(--light);
+  padding-top:1rem;
+}
+.hire__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.hire__right img{
+  border-radius: 3rem;
+  padding: 2rem;
+  margin-left:80rem;
+  margin-top:-73rem;
+  max-width:fit-content;
+  height:85rem;
+}
+.hire__left h3{
+  font-size: 8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hire__left p {
+  font-size: 2.5rem;
+  font-weight: 300;
+  /* for space */
+  margin-bottom: 6rem;
+}
+.hire__left p span {
+  font-weight:500;
+}
+.hire__name h5 {
+  color:#707070;
+  font-size:2rem;
+  border: 2px solid var(--gray);
+  border-radius:1rem;
+  margin-top: 3rem;
+  padding:1.8rem;
+  width:48.5%;
+}
+.hire__name h6{
+  color:#707070;
+  font-size:2rem;
+  border: 2px solid var(--gray);
+  border-radius:1rem;
+  margin-top: 3rem;
+  padding:6.5rem;
+  width:48.5%;
+}
+.hire__name a{
+  color: var(--light);
+  background-color: #228b22  ;
+  font-size: 2.3rem;
+  border-radius: 1rem;
+  position: absolute;
+  padding: 2.5rem;
+  margin: 3rem;
+  margin-bottom:1rem;
+  width:18%;
+  margin-left:-.1rem;
+  text-align:center;
+}
+.hire__name a:hover{
+  background-color:var(--dark);
+  transition: 0.5s ease;
+}
+
+/* FINALLY FOOTER */
+.footer {
+  background-color: var(--dark);
+}
+.footer__wrapper {
+  /* df */
+  display: flex;
+  /* j tas x axis ang jc */
+  justify-content: space-between;
+}
+.footer__left {
+  display: flex;
+  /* y axis */
+  align-items: center;
+}
+.footer__left img {
+  width: 10rem;
+  border-radius: 50%;
+}
+.footer__social {
+  display: flex;
+  gap: 2rem;
+  size:2rem;
+  margin-left:43rem;
+  margin-top:7rem;
+  top:-50px; 
+}
+/* magpapalit ng color ng header nav */
+.footer__social li a {
+  color: var(--light);
+  font-weight: 500;
+  border: 2px solid #595959;
+  padding:2rem;
+  border-radius:49.1%;
+  text-align:center;
   
 }
+/* color change kapag ihhover */
+.footer__social li a:hover {
+  color: var(--green);
+  border: 2px solid var(--green);
+}
+.footer__center p{
+  color: var(--light);
+  font-size: 1.5rem;
+  margin-left:94rem;
+  margin-bottom:6rem;
+}
+
 /* REPEATABLE PATTERNS */
 :root {
   --green: #7d9a68;
